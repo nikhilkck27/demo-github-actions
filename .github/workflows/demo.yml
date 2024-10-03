@@ -1,0 +1,13 @@
+name: Demo workflow
+
+on: push
+
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: apt update -y
+      - run: node --version
+      - run: npm --version
+
+
